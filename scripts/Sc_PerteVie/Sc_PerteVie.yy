@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Sc_PerteVie",
+  "isCompatibility":false,
+  "isDnD":true,
+  "name":"Sc_PerteVie",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
