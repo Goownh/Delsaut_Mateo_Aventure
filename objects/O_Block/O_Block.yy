@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"O_Spike",
+  "%Name":"O_Block",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"O_Perso","path":"objects/O_Perso/O_Perso.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"O_Mob","path":"objects/O_Mob/O_Mob.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O_Spike",
+  "name":"O_Block",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,10 +28,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"S_Pikes",
-    "path":"sprites/S_Pikes/S_Pikes.yy",
+    "name":"S_Block",
+    "path":"sprites/S_Block/S_Block.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,0 +1,1 @@
+draw_sprite(S_ForceField, 0, O_Perso.x, O_Perso.y);

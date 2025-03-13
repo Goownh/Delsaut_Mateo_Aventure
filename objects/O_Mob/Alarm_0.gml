@@ -1,0 +1,1 @@
+O_Perso.image_alpha = 1;
