@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Delsaut_Mateo_Aventure",
   "resources":[
@@ -45,7 +45,6 @@
     {"id":{"name":"Floor1","path":"rooms/Floor1/Floor1.yy",},},
     {"id":{"name":"Mort","path":"rooms/Mort/Mort.yy",},},
     {"id":{"name":"Sc_PerteVie","path":"scripts/Sc_PerteVie/Sc_PerteVie.yy",},},
-    {"id":{"name":"Shader1","path":"shaders/Shader1/Shader1.yy",},},
     {"id":{"name":"S_Block","path":"sprites/S_Block/S_Block.yy",},},
     {"id":{"name":"S_Coeur","path":"sprites/S_Coeur/S_Coeur.yy",},},
     {"id":{"name":"S_ForceField","path":"sprites/S_ForceField/S_ForceField.yy",},},

@@ -1,1 +1,1 @@
-bouclier = false;
+bouclierActif = false;

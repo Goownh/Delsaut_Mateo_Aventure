@@ -10,7 +10,7 @@ if (distancePerso < 300) {
 	}
 }
 else {
-	if (distanceStart > 100) {
+	if (distanceStart > 0) {
 		move_towards_point(xstart, ystart, 3);
 	}
 	else {
