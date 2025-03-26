@@ -1,38 +1,43 @@
-
 if(controles = "clavier") {
 	var QDown = keyboard_check(ord("Q"));
 	var DDown = keyboard_check(ord("D"));
 	var ZDown = keyboard_check(ord("Z"));
 	var SDown = keyboard_check(ord("S"));
 
+	dirX = 0;
+	dirY = 0;
 	if(QDown) {
-		dirX = -speedg;
+		dirX = -1;
 	}
 	if(DDown) {
-		dirX = speedg;
+		dirX = 1;
 	}
 	if(ZDown) {
-		dirY = -speedg;
+		dirY = -1;
 	}
 	if(SDown) {
-		dirY = speedg;
-	}
-
-	if(!QDown  && !DDown ) {
-		dirX = 0;
-	}
-	if(!SDown &&  !ZDown) {
-		dirY = 0;
+		dirY = 1;
 	}
 }
 else if(controles = "manette") {
-		manette = gamepad_is_connected(0);
-		dirX = gamepad_axis_value(manette, gp_axislh)
-		dirY = gamepad_axis_value(manette, gp_axislh)
+		var manette = gamepad_is_connected(0);
+		show_debug_message(manette);
+		if(!manette) {
+			controles = "clavier";
+		}
+		gamepad_set_axis_deadzone(0, 0.3);
+		dirX = gamepad_axis_value(0, gp_axislh);
+		dirY = gamepad_axis_value(0, gp_axislv);
 }
 else {
 	controles = "clavier";
 }
+xspd = dirX * walkSpeed;
+yspd = dirY * walkSpeed;
+if(xspd != 0 && yspd != 0) {
+	xspd *= 0.707;
+	yspd *= 0.707;
+}
 
-x += dirX
-y += dirY
+x += xspd;
+y += yspd;

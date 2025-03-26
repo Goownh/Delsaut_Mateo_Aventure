@@ -9,6 +9,13 @@ variable = gamepad_is_connected(0);
 /// @DnDArgument : "gp" "variable"
 variable = gamepad_is_connected(variable) ? gamepad_axis_value(variable, gp_axislh) : 0;
 
+/// @DnDAction : YoYo Games.Gamepad.Get_Gamepad_Axis_Value
+/// @DnDVersion : 1.1
+/// @DnDHash : 47CB252D
+/// @DnDArgument : "gp" "variable"
+/// @DnDArgument : "axis" "gp_axislv"
+variable = gamepad_is_connected(variable) ? gamepad_axis_value(variable, gp_axislv) : 0;
+
 /// @DnDAction : YoYo Games.Gamepad.Get_Gamepad_Trigger_Value
 /// @DnDVersion : 1.1
 /// @DnDHash : 511BA83D

@@ -3,7 +3,9 @@
   "%Name":"O_Pause",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":37,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":39,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"O_Pause",
@@ -27,7 +29,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"varRoom","filters":[],"listItems":[],"multiselect":false,"name":"varRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Floor1","path":"rooms/Floor1/Floor1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Floor1","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"pause","filters":[],"listItems":[],"multiselect":false,"name":"pause","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"pauseScreen","filters":[],"listItems":[],"multiselect":false,"name":"pauseScreen","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"S_Fond","path":"sprites/S_Fond/S_Fond.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"S_Fond","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
