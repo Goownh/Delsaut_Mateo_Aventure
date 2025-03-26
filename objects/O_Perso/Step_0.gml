@@ -1,4 +1,4 @@
-if(controles = "clavier") {
+if(O_Controles.controles = "clavier") {
 	var QDown = keyboard_check(ord("Q"));
 	var DDown = keyboard_check(ord("D"));
 	var ZDown = keyboard_check(ord("Z"));
@@ -19,7 +19,7 @@ if(controles = "clavier") {
 		dirY = 1;
 	}
 }
-else if(controles = "manette") {
+else if(O_Controles.controles = "manette") {
 		var manette = gamepad_is_connected(0);
 		show_debug_message(manette);
 		if(!manette) {
@@ -30,7 +30,7 @@ else if(controles = "manette") {
 		dirY = gamepad_axis_value(0, gp_axislv);
 }
 else {
-	controles = "clavier";
+	O_Controles.controles = "clavier";
 }
 xspd = dirX * walkSpeed;
 yspd = dirY * walkSpeed;

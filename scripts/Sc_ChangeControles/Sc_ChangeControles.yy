@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Sc_ChangeControle",
+  "%Name":"Sc_ChangeControles",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Sc_ChangeControle",
+  "name":"Sc_ChangeControles",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

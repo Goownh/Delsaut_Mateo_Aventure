@@ -1,3 +1,3 @@
 if(pause) {
-	Sc_ChangeControle("manette");
+	Sc_ChangeControles("manette");
 }
