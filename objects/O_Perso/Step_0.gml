@@ -38,6 +38,56 @@ if(xspd != 0 && yspd != 0) {
 	xspd *= 0.707;
 	yspd *= 0.707;
 }
+switch (xspd) {
+	case (xspd == 0):
+		switch (yspd) {
+			case (yspd == 0):
+				sprite_index = S_PersoFront;//idle
+			break;
+			
+			case (yspd > 0):
+				sprite_index = S_PersoFront;//avancer bas
+			break;
+			
+			case (yspd < 0):
+				sprite_index = S_PersoBack;//avancer haut
+			break;
+		}
+	break;
+	
+	case (xspd > 0):
+		switch (yspd) {
+			case (yspd == 0):
+				sprite_index = S_PersoRight;//droite
+			break;
+			
+			case (yspd > 0):
+				sprite_index = S_PersoRight;//diago bas droite
+			break;
+			
+			case (yspd < 0):
+				sprite_index = S_PersoRight;//diago haut droite
+			break;
+		}
+	break;
+	
+	case (xspd < 0):
+		switch (yspd) {
+			case (yspd == 0):
+				sprite_index = S_PersoLeft;//gauche
+			break;
+			
+			case (yspd > 0):
+				sprite_index = S_PersoLeft;//diago bas gauche
+			break;
+			
+			case (yspd < 0):
+				sprite_index = S_PersoLeft;//diago haut gauhe
+			break;
+		}
+	break;
+	
+}
 
 x += xspd;
 y += yspd;

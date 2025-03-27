@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"O_Controles",
+  "%Name":"O_Inventaire",
   "eventList":[],
   "managed":true,
-  "name":"O_Controles",
+  "name":"O_Inventaire",
   "overriddenProperties":[],
   "parent":{
     "name":"Managers",
@@ -23,9 +23,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"controles","filters":[],"listItems":[],"multiselect":false,"name":"controles","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"clavier\"","varType":2,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

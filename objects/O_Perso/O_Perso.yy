@@ -43,8 +43,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Perso",
-    "path":"sprites/S_Perso/S_Perso.yy",
+    "name":"S_PersoFront",
+    "path":"sprites/S_PersoFront/S_PersoFront.yy",
   },
   "spriteMaskId":null,
   "visible":true,
