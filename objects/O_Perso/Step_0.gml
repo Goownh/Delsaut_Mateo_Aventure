@@ -38,11 +38,15 @@ if(xspd != 0 && yspd != 0) {
 	xspd *= 0.707;
 	yspd *= 0.707;
 }
-switch (xspd) {
-	case (xspd == 0):
+
+if(xspd ==0 && yspd ==0) {
+	sprite_index = S_PersoFront;//idle	
+}
+switch (xspd > 0) {
+	case (true):
 		switch (yspd) {
 			case (yspd == 0):
-				sprite_index = S_PersoFront;//idle
+				sprite_index = S_PersoRight;//droite
 			break;
 			
 			case (yspd > 0):
@@ -55,7 +59,7 @@ switch (xspd) {
 		}
 	break;
 	
-	case (xspd > 0):
+	case (false):
 		switch (yspd) {
 			case (yspd == 0):
 				sprite_index = S_PersoRight;//droite
@@ -70,23 +74,6 @@ switch (xspd) {
 			break;
 		}
 	break;
-	
-	case (xspd < 0):
-		switch (yspd) {
-			case (yspd == 0):
-				sprite_index = S_PersoLeft;//gauche
-			break;
-			
-			case (yspd > 0):
-				sprite_index = S_PersoLeft;//diago bas gauche
-			break;
-			
-			case (yspd < 0):
-				sprite_index = S_PersoLeft;//diago haut gauhe
-			break;
-		}
-	break;
-	
 }
 
 x += xspd;
