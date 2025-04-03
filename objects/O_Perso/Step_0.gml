@@ -38,7 +38,7 @@ if(xspd != 0 && yspd != 0) {
 	xspd *= 0.707;
 	yspd *= 0.707;
 }
-
+/*
 if(xspd ==0 && yspd ==0) {
 	sprite_index = S_PersoFront;//idle	
 }
@@ -74,7 +74,7 @@ switch (xspd > 0) {
 			break;
 		}
 	break;
-}
+}*/
 
 x += xspd;
 y += yspd;
