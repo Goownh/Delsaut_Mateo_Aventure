@@ -3,7 +3,7 @@ switch(room) {
 	case Credits:
 	case Mort:
 		if(O_Controles.controles = "clavier" ) {
-			window_set_cursor(cr_none);
+			//window_set_cursor(cr_none);
 			cursor_sprite = S_Souris
 		}
 		else {
