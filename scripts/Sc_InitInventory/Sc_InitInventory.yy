@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Sc_InitGame",
+  "%Name":"Sc_InitInventory",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Sc_InitGame",
+  "name":"Sc_InitInventory",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

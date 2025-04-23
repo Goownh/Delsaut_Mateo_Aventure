@@ -1,22 +1,22 @@
-item = choose(item_heal, item_bow, item_key, item_mobloot, item_sword);
+item = choose(itemHeal, itemBow, itemKey, itemMobLoot, itemSword);
 switch(item) {
-	case item_heal:
+	case itemHeal:
 	    sprite_index = S_Heal;
 		break;
 	
-	case item_bow:
+	case itemBow:
 	    sprite_index = S_Bow;
 		break;
 	
-	case item_key:
+	case itemKey:
 	    sprite_index = S_Key;
 		break;
 	
-	case item_mobloot:
+	case itemMobLoot:
 	    sprite_index = S_MobLoot;
 		break;
 	
-	case item_sword:
+	case itemSword:
 	    sprite_index = S_Sword;
 		break;
 }
