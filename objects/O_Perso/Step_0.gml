@@ -1,80 +1,61 @@
-if(O_Controles.controles = "clavier") {
-	var QDown = keyboard_check(ord("Q"));
-	var DDown = keyboard_check(ord("D"));
-	var ZDown = keyboard_check(ord("Z"));
-	var SDown = keyboard_check(ord("S"));
+//if(O_Controles.controles = "clavier") {
+var QDown = keyboard_check(ord("Q"));
+var DDown = keyboard_check(ord("D"));
+var ZDown = keyboard_check(ord("Z"));
+var SDown = keyboard_check(ord("S"));
 
-	dirX = 0;
-	dirY = 0;
-	if(QDown) {
-		dirX = -1;
-	}
-	if(DDown) {
-		dirX = 1;
-	}
-	if(ZDown) {
-		dirY = -1;
-	}
-	if(SDown) {
-		dirY = 1;
-	}
+dirCX = 0;
+dirCY = 0;
+dirMX = 0;
+dirMY = 0;
+	
+if(QDown) {
+	dirCX = -1;
 }
-else if(O_Controles.controles = "manette") {
-		var manette = gamepad_is_connected(0);
-		show_debug_message(manette);
-		if(!manette) {
-			controles = "clavier";
-		}
-		gamepad_set_axis_deadzone(0, 0.3);
-		dirX = gamepad_axis_value(0, gp_axislh);
-		dirY = gamepad_axis_value(0, gp_axislv);
+if(DDown) {
+	dirCX = 1;
 }
+if(ZDown) {
+	dirCY = -1;
+}
+if(SDown) {
+	dirCY = 1;
+}
+//}
+//else if(O_Controles.controles = "manette") {
+var manette = gamepad_is_connected(0);
+if(manette) {
+	gamepad_set_axis_deadzone(0, 0.3);
+	dirMX = gamepad_axis_value(0, gp_axislh);
+	dirMY = gamepad_axis_value(0, gp_axislv);
+}
+show_debug_message(dirMX);
+show_debug_message(dirMY);
+/*}
 else {
 	O_Controles.controles = "clavier";
+}*/
+if(dirCX == 0) {
+	xspd = dirMX * walkSpeed;
 }
-xspd = dirX * walkSpeed;
-yspd = dirY * walkSpeed;
+else {
+	xspd = dirCX * walkSpeed;
+}
+if(dirCY == 0) {
+	yspd = dirMY * walkSpeed;
+}
+else {
+	yspd = dirCY * walkSpeed;
+}
+
 if(xspd != 0 && yspd != 0) {
 	xspd *= 0.707;
 	yspd *= 0.707;
 }
-/*
-if(xspd ==0 && yspd ==0) {
-	sprite_index = S_PersoFront;//idle	
-}
-switch (xspd > 0) {
-	case (true):
-		switch (yspd) {
-			case (yspd == 0):
-				sprite_index = S_PersoRight;//droite
-			break;
-			
-			case (yspd > 0):
-				sprite_index = S_PersoFront;//avancer bas
-			break;
-			
-			case (yspd < 0):
-				sprite_index = S_PersoBack;//avancer haut
-			break;
-		}
-	break;
-	
-	case (false):
-		switch (yspd) {
-			case (yspd == 0):
-				sprite_index = S_PersoRight;//droite
-			break;
-			
-			case (yspd > 0):
-				sprite_index = S_PersoRight;//diago bas droite
-			break;
-			
-			case (yspd < 0):
-				sprite_index = S_PersoRight;//diago haut droite
-			break;
-		}
-	break;
-}*/
+
+
+show_debug_message(xspd);
+show_debug_message(yspd);
 
 x += xspd;
 y += yspd;

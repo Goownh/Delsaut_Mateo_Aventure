@@ -4,4 +4,4 @@ if(!pause) {
 else {
 	pause = false;
 }
-Sc_Pause(pause)
+Sc_Pause(pause);

@@ -1,3 +1,3 @@
 if(pause) {
-	Sc_ChangeControles("clavier");
+	///Sc_ChangeControles("clavier");
 }

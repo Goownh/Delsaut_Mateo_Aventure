@@ -39,7 +39,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"Delsaut_Mateo_Aventure",
   "resources":[
@@ -60,6 +60,7 @@
     {"id":{"name":"O_Restart","path":"objects/O_Restart/O_Restart.yy",},},
     {"id":{"name":"O_Spike","path":"objects/O_Spike/O_Spike.yy",},},
     {"id":{"name":"O_Vie","path":"objects/O_Vie/O_Vie.yy",},},
+    {"id":{"name":"testcam","path":"objects/testcam/testcam.yy",},},
     {"id":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
     {"id":{"name":"Floor2","path":"rooms/Floor2/Floor2.yy",},},
     {"id":{"name":"Floor3","path":"rooms/Floor3/Floor3.yy",},},
