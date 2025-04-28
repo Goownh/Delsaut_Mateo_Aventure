@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Delsaut_Mateo_Aventure",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -35,11 +35,12 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Delsaut_Mateo_Aventure",
   "resources":[
@@ -48,7 +49,6 @@
     {"id":{"name":"O_Credits","path":"objects/O_Credits/O_Credits.yy",},},
     {"id":{"name":"O_Cursor","path":"objects/O_Cursor/O_Cursor.yy",},},
     {"id":{"name":"O_Exit","path":"objects/O_Exit/O_Exit.yy",},},
-    {"id":{"name":"O_Inventaire","path":"objects/O_Inventaire/O_Inventaire.yy",},},
     {"id":{"name":"O_Inventory","path":"objects/O_Inventory/O_Inventory.yy",},},
     {"id":{"name":"O_Item","path":"objects/O_Item/O_Item.yy",},},
     {"id":{"name":"O_Menu","path":"objects/O_Menu/O_Menu.yy",},},
@@ -69,6 +69,7 @@
     {"id":{"name":"Pause","path":"rooms/Pause/Pause.yy",},},
     {"id":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"id":{"name":"Sc_ChangeControles","path":"scripts/Sc_ChangeControles/Sc_ChangeControles.yy",},},
+    {"id":{"name":"Sc_DrawInventory","path":"scripts/Sc_DrawInventory/Sc_DrawInventory.yy",},},
     {"id":{"name":"Sc_InitInventory","path":"scripts/Sc_InitInventory/Sc_InitInventory.yy",},},
     {"id":{"name":"Sc_MenuBg","path":"scripts/Sc_MenuBg/Sc_MenuBg.yy",},},
     {"id":{"name":"Sc_Pause","path":"scripts/Sc_Pause/Sc_Pause.yy",},},
