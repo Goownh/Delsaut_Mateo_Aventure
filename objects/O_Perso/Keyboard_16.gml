@@ -3,6 +3,12 @@
 /// @DnDHash : 63A80401
 variable = gamepad_is_connected(0);
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 596502F1
+/// @DnDArgument : "expr" "instan"
+variable = instan;
+
 /// @DnDAction : YoYo Games.Gamepad.Get_Gamepad_Axis_Value
 /// @DnDVersion : 1.1
 /// @DnDHash : 502017FF

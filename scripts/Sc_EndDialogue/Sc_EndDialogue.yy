@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Sc_ChangeControles",
+  "%Name":"Sc_EndDialogue",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Sc_ChangeControles",
+  "name":"Sc_EndDialogue",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Dialogue",
+    "path":"folders/Scripts/Dialogue.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

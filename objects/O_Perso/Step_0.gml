@@ -59,3 +59,5 @@ show_debug_message(yspd);
 
 x += xspd;
 y += yspd;
+show_debug_message(x)
+show_debug_message(y)
