@@ -1,3 +1,4 @@
+randomise();
 item = choose(itemHeal, itemBow, itemKey, itemMobLoot, itemSword);
 switch(item) {
 	case itemHeal:

@@ -28,10 +28,10 @@ if(manette) {
 	gamepad_set_axis_deadzone(0, 0.3);
 	dirMX = gamepad_axis_value(0, gp_axislh);
 	dirMY = gamepad_axis_value(0, gp_axislv);
-}
+}/*
 show_debug_message(dirMX);
 show_debug_message(dirMY);
-/*}
+}
 else {
 	O_Controles.controles = "clavier";
 }*/
@@ -54,10 +54,5 @@ if(xspd != 0 && yspd != 0) {
 }
 
 
-show_debug_message(xspd);
-show_debug_message(yspd);
-
 x += xspd;
 y += yspd;
-show_debug_message(x)
-show_debug_message(y)

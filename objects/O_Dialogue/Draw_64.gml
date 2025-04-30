@@ -11,7 +11,8 @@ if(isTextDisplay == true)
 
 	draw_set_font(Font1);
 
-	draw_set_colour($FF000000 & $ffffff);draw_set_alpha(1);
+	draw_set_colour($FF000000 & $ffffff);
+	draw_set_alpha(1);
 
 	draw_text_ext(50+5,720-230+5,textToDisplay,25,1510)
 }
