@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Sc_InitInventory",
+  "%Name":"Sc_AchatMarchant",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Sc_InitInventory",
+  "name":"Sc_AchatMarchant",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

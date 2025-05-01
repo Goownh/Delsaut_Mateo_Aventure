@@ -1,1 +1,0 @@
-O_Perso.pieces += 1;

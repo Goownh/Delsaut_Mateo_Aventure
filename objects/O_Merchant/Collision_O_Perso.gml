@@ -12,4 +12,3 @@ if (space && !parle && alarm_get(0)<=0) {
 		script_execute(Sc_BeginDialogue, "Degage");
 	}
 }
-show_debug_message(alarm_get(0))

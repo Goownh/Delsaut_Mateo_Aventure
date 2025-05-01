@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Sc_DrawInventaire",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sc_DrawInventaire",
+  "parent":{
+    "name":"Inventaire",
+    "path":"folders/Scripts/Inventaire.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
