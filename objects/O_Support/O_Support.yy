@@ -33,7 +33,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"S_Support",
     "path":"sprites/S_Support/S_Support.yy",
