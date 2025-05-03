@@ -5,4 +5,3 @@ if(item == itemMobLoot) {
 	O_Perso.pieces += 1;
 	instance_destroy();
 }
-show_debug_message(achetable)

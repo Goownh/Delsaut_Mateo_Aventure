@@ -1,7 +1,9 @@
 randomise();
+var instance = instance_position(x,y,O_Support);
 
-if(position_meeting(x,y,O_Support)) {
+if(instance > 0) {
 	achetable = true;
+	supportactu = instance;
 }
 
 if(achetable) {
@@ -38,7 +40,7 @@ switch(item) {
 		break;
 }
 
-if(position_meeting(x,y,O_Support)) {
-	O_Support.Item = self;
-	O_Support.item = item;
+if(instance > 0) {
+	instance.Item = self;
+	
 }

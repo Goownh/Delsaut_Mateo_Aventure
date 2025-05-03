@@ -1,4 +1,4 @@
-function Sc_DrawInventory(){
+function Sc_DrawInventaire(){
 	draw_sprite_ext(S_Inventory, 0, view_wport[0]/2, view_hport[0]/2, 5, 5, 0, #FFFFFF, 1);
 	var _xx = O_Inventory.x + 300;
 	var _yy = O_Inventory.y + 300;
