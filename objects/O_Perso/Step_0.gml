@@ -3,6 +3,7 @@ var SDown = keyboard_check(ord("S"));
 var QDown = keyboard_check(ord("Q"));
 var DDown = keyboard_check(ord("D"));
 
+
 dirCX = 0;
 dirCY = 0;
 dirMX = 0;
@@ -65,3 +66,6 @@ if(xspd == 0 && yspd == 0) {
 
 x += xspd;
 y += yspd;
+
+rot = gesture_get_rotate_angle()
+

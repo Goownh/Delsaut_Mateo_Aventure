@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Mob",
-    "path":"sprites/S_Mob/S_Mob.yy",
+    "name":"S_EnnemiDroite",
+    "path":"sprites/S_EnnemiDroite/S_EnnemiDroite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
