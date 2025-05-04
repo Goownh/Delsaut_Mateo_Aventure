@@ -1,7 +1,7 @@
 distancePerso = distance_to_object(O_Perso);
 distanceStart = distance_to_point(xstart, ystart);
 
-if (distancePerso < 20 00) {
+if (distancePerso < 2000) {
 	if (distancePerso > 0) {
 		move_towards_point(O_Perso.x, O_Perso.y, 24);
 	}

@@ -67,5 +67,27 @@ if(xspd == 0 && yspd == 0) {
 x += xspd;
 y += yspd;
 
-rot = gesture_get_rotate_angle()
+var ClickDown = mouse_check_button_pressed(mb_left);
+
+if(ClickDown) {
+	if(xprevious < x) {
+		atk = instance_create_layer(x+512, y, "Character", O_Atk);
+		atk.image_angle = -90;
+	}
+	else if(xprevious > x) {
+		atk = instance_create_layer(x-512, y, "Character", O_Atk);
+		atk.image_angle = 90;
+	}
+	else {
+		if(yprevious < y) {
+			atk = instance_create_layer(x, y+512, "Character", O_Atk);
+			atk.image_angle = 180;
+		}
+		else if(yprevious > y) {
+			atk = instance_create_layer(x, y-512, "Character", O_Atk);
+			atk.image_angle = 0;
+		}
+	}
+}
+
 

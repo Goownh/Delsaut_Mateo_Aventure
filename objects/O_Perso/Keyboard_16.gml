@@ -57,3 +57,13 @@ var l0AA83D59_0 = 0;var l0AA83D59_1 = gp_face4;if(gamepad_is_connected(l0AA83D
 /// @DnDVersion : 1.1
 /// @DnDHash : 07554895
 var l07554895_0 = 0;var l07554895_1 = gp_face4;if(gamepad_is_connected(l07554895_0) && gamepad_button_check_released(l07554895_0, l07554895_1)){}
+
+/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Pressed
+/// @DnDVersion : 1.1
+/// @DnDHash : 43FC5CCC
+var l43FC5CCC_0;l43FC5CCC_0 = mouse_check_button_pressed(mb_left);if (l43FC5CCC_0){}
+
+/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 6BA89CAA
+instance_create_layer(0, 0, "Instances", noone);
