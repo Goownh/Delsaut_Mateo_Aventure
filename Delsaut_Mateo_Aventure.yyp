@@ -67,6 +67,7 @@
     {"id":{"name":"O_Perso","path":"objects/O_Perso/O_Perso.yy",},},
     {"id":{"name":"O_Play","path":"objects/O_Play/O_Play.yy",},},
     {"id":{"name":"O_Restart","path":"objects/O_Restart/O_Restart.yy",},},
+    {"id":{"name":"O_Sarcoco","path":"objects/O_Sarcoco/O_Sarcoco.yy",},},
     {"id":{"name":"O_Spike","path":"objects/O_Spike/O_Spike.yy",},},
     {"id":{"name":"O_Support","path":"objects/O_Support/O_Support.yy",},},
     {"id":{"name":"O_Vie","path":"objects/O_Vie/O_Vie.yy",},},
