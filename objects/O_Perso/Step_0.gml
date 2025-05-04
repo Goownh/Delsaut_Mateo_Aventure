@@ -2,13 +2,15 @@ var ZDown = keyboard_check(ord("Z"));
 var SDown = keyboard_check(ord("S"));
 var QDown = keyboard_check(ord("Q"));
 var DDown = keyboard_check(ord("D"));
+var ClickDown = mouse_check_button_pressed(mb_left);
 
-
+directionPerso = 0;
 dirCX = 0;
 dirCY = 0;
 dirMX = 0;
 dirMY = 0;
-	
+
+//movement clavier
 if(ZDown) {
 	sprite_index = S_PersoHaut;
 	diridle = false;
@@ -29,7 +31,7 @@ if(DDown) {
 	diridle = true;
 	dirCX = 1;
 }
-
+//movement manette
 var manette = gamepad_is_connected(0);
 if(manette) {
 	gamepad_set_axis_deadzone(0, 0.3);
@@ -58,36 +60,48 @@ if(xspd != 0 && yspd != 0) {
 if(xspd == 0 && yspd == 0) {
 	if(diridle) {
 		sprite_index = S_PersoIdleBas;
+		directionPerso = 180;
 	}
 	else {	
 		sprite_index = S_PersoIdleHaut;
+		directionPerso = 0;
 	}
 }
 
 x += xspd;
 y += yspd;
 
-var ClickDown = mouse_check_button_pressed(mb_left);
 
-if(ClickDown) {
-	if(xprevious < x) {
+
+
+if(yspd<0 && yspd>xspd) {
+	directionPerso = 0;
+}
+else if(yspd>0 && yspd>=xspd){
+	directionPerso = 180;
+}
+if(xspd<0 && xspd<=yspd) {
+	directionPerso = 90;
+}
+else if(xspd>0 && yspd<=xspd) {
+	directionPerso = -90;
+}
+
+if(ClickDown && !instance_exists(O_Atk)) {
+	if(directionPerso == -90) {
 		atk = instance_create_layer(x+512, y, "Character", O_Atk);
 		atk.image_angle = -90;
 	}
-	else if(xprevious > x) {
+	else if(directionPerso == 90) {
 		atk = instance_create_layer(x-512, y, "Character", O_Atk);
 		atk.image_angle = 90;
 	}
-	else {
-		if(yprevious < y) {
-			atk = instance_create_layer(x, y+512, "Character", O_Atk);
-			atk.image_angle = 180;
-		}
-		else if(yprevious > y) {
-			atk = instance_create_layer(x, y-512, "Character", O_Atk);
-			atk.image_angle = 0;
-		}
+	else if(directionPerso == 180) {
+		atk = instance_create_layer(x, y+512, "Character", O_Atk);
+		atk.image_angle = 180;
+	}
+	else if(directionPerso == 0) {
+		atk = instance_create_layer(x, y-512, "Character", O_Atk);
+		atk.image_angle = 0;
 	}
 }
-
-

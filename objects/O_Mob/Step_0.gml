@@ -30,3 +30,8 @@ if(hspeed < 0) {
 if(hspeed > 0) {
 	sprite_index = S_EnnemiDroite;
 }
+
+if(hp<=0) {
+	O_Perso.image_alpha = 1;
+	instance_destroy();
+}
