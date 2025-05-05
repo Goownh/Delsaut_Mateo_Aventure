@@ -10,7 +10,7 @@ if(achetable) {
 	item = choose(itemHeal, itemSword);
 }
 else {
-	item = choose(itemHeal, Gold);
+	item = choose(itemHeal, itemGold);
 }
 
 
@@ -20,7 +20,7 @@ switch(item) {
 		price = 1;
 		break;
 	
-	case Gold:
+	case itemGold:
 	    sprite_index = S_Gold;
 		break;
 	

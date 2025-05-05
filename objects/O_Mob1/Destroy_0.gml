@@ -1,1 +1,1 @@
-instance_create_layer(x, phy_com_y, "Instances", O_Item);
+instance_create_layer(x, y, "Instances", O_Item);

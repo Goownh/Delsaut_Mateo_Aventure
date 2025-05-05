@@ -99,6 +99,7 @@
     {"id":{"name":"Sc_EndDialogue","path":"scripts/Sc_EndDialogue/Sc_EndDialogue.yy",},},
     {"id":{"name":"Sc_InitInventaire","path":"scripts/Sc_InitInventaire/Sc_InitInventaire.yy",},},
     {"id":{"name":"Sc_Inventaire","path":"scripts/Sc_Inventaire/Sc_Inventaire.yy",},},
+    {"id":{"name":"Sc_InventaireSoin","path":"scripts/Sc_InventaireSoin/Sc_InventaireSoin.yy",},},
     {"id":{"name":"Sc_MenuBg","path":"scripts/Sc_MenuBg/Sc_MenuBg.yy",},},
     {"id":{"name":"Sc_Pause","path":"scripts/Sc_Pause/Sc_Pause.yy",},},
     {"id":{"name":"Sc_PerteVie","path":"scripts/Sc_PerteVie/Sc_PerteVie.yy",},},

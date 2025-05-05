@@ -2,6 +2,7 @@ var ZDown = keyboard_check(ord("Z"));
 var SDown = keyboard_check(ord("S"));
 var QDown = keyboard_check(ord("Q"));
 var DDown = keyboard_check(ord("D"));
+var EPress = keyboard_check_pressed(ord("E"));
 var ClickDown = mouse_check_button_pressed(mb_left);
 
 directionPerso = 0;
@@ -104,4 +105,10 @@ if(ClickDown && !instance_exists(O_Atk)) {
 		atk = instance_create_layer(x, y-512, "Character", O_Atk);
 		atk.image_angle = 0;
 	}
+}
+
+if(EPress && O_Inventory.soin>0 && O_Vie.Hp_Joueur < 10) {
+	O_Inventory.soin -= 1;
+	O_Vie.Hp_Joueur += 1;
+	Sc_InventaireSoin()
 }

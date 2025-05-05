@@ -23,8 +23,10 @@ function Sc_Inventaire(Item){
 		instance_destroy();	
 	}
 	else {
+		if(type == itemSword) {O_Inventory.epee += 1;}
+		if(type == itemHeal) {O_Inventory.soin += 1;}
 		O_Inventory.itemArray[pos][itemAmount] += 1;
+		
 		instance_destroy();	
 	}
-
 }
