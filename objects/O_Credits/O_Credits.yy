@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_Block",
-    "path":"sprites/S_Block/S_Block.yy",
+    "name":"S_BlockButton",
+    "path":"sprites/S_BlockButton/S_BlockButton.yy",
   },
   "spriteMaskId":null,
   "visible":false,

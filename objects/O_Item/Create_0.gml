@@ -42,5 +42,4 @@ switch(item) {
 
 if(instance > 0) {
 	instance.Item = self;
-	
 }

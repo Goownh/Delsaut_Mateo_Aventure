@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"S_PersoBas",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":499,
   "bbox_left":103,
   "bbox_right":408,

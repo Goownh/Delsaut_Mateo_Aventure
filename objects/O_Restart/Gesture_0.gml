@@ -1,1 +1,1 @@
-room_goto(Test);
+room_goto(Floor1);
