@@ -6,9 +6,9 @@ if (space && parle) {
 }
 if (space && !parle && alarm_get(0)<=0) {
 	if(!dejaParle) {
-		script_execute(Sc_BeginDialogue, "Bonjour, je vend de tout par ici");		
+		script_execute(Sc_BeginDialogue, "Prend ce dont tu a besoin pour ta quete.\n\nDe toute facon, ton ame est deja mienne.");		
 	}
 	else {
-		script_execute(Sc_BeginDialogue, "Degage");
+		script_execute(Sc_BeginDialogue, "Degage maintenant !\n\nIl faut que tu meure le plus vite possible pour mon succes.");
 	}
 }
