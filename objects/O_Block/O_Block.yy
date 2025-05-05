@@ -35,5 +35,5 @@
     "path":"sprites/S_Block/S_Block.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
