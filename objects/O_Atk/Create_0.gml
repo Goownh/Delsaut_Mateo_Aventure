@@ -1,1 +1,0 @@
-show_debug_message((1*O_Inventory.vases)+O_Inventory.epee)

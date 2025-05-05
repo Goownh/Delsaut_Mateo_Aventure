@@ -117,7 +117,7 @@ if(EPress && O_Inventory.soin>0 && O_Vie.Hp_Joueur < 10) {
 }
 
 
-if(start) {
+if(manette && start) {
 	if(!O_Pause.pause) {
 		O_Pause.pause = true;
 	}
@@ -125,4 +125,8 @@ if(start) {
 		O_Pause.pause = false;
 	}
 	Sc_Pause(O_Pause.pause);
+}
+
+if(O_Inventory.vases = 4) {
+	room_goto(Victoire)	;
 }

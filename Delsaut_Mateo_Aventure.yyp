@@ -92,6 +92,7 @@
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Mort","path":"rooms/Mort/Mort.yy",},},
     {"id":{"name":"Pause","path":"rooms/Pause/Pause.yy",},},
+    {"id":{"name":"Victoire","path":"rooms/Victoire/Victoire.yy",},},
     {"id":{"name":"Sc_AchatMarchant","path":"scripts/Sc_AchatMarchant/Sc_AchatMarchant.yy",},},
     {"id":{"name":"Sc_BeginDialogue","path":"scripts/Sc_BeginDialogue/Sc_BeginDialogue.yy",},},
     {"id":{"name":"Sc_DrawInventaire","path":"scripts/Sc_DrawInventaire/Sc_DrawInventaire.yy",},},
@@ -139,6 +140,7 @@
     {"id":{"name":"S_Vase2","path":"sprites/S_Vase2/S_Vase2.yy",},},
     {"id":{"name":"S_vase3","path":"sprites/S_vase3/S_vase3.yy",},},
     {"id":{"name":"S_Vase4","path":"sprites/S_Vase4/S_Vase4.yy",},},
+    {"id":{"name":"S_Victoire","path":"sprites/S_Victoire/S_Victoire.yy",},},
     {"id":{"name":"sheet","path":"sprites/sheet/sheet.yy",},},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
@@ -152,6 +154,7 @@
     {"roomId":{"name":"Pause","path":"rooms/Pause/Pause.yy",},},
     {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
     {"roomId":{"name":"Floor3","path":"rooms/Floor3/Floor3.yy",},},
+    {"roomId":{"name":"Victoire","path":"rooms/Victoire/Victoire.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
