@@ -9,8 +9,8 @@
   "name":"O_Support",
   "overriddenProperties":[],
   "parent":{
-    "name":"Marchant",
-    "path":"folders/Objects/Marchant.yy",
+    "name":"Managers",
+    "path":"folders/Objects/Managers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
