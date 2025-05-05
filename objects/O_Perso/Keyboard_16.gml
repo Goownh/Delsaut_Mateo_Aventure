@@ -1,69 +1,17 @@
-/// @DnDAction : YoYo Games.Gamepad.Get_Gamepad_Connected
-/// @DnDVersion : 1
-/// @DnDHash : 63A80401
-variable = gamepad_is_connected(0);
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 596502F1
-/// @DnDArgument : "expr" "instan"
-variable = instan;
-
-/// @DnDAction : YoYo Games.Gamepad.Get_Gamepad_Axis_Value
-/// @DnDVersion : 1.1
-/// @DnDHash : 502017FF
-/// @DnDArgument : "gp" "variable"
-variable = gamepad_is_connected(variable) ? gamepad_axis_value(variable, gp_axislh) : 0;
-
-/// @DnDAction : YoYo Games.Gamepad.Get_Gamepad_Axis_Value
-/// @DnDVersion : 1.1
-/// @DnDHash : 47CB252D
-/// @DnDArgument : "gp" "variable"
-/// @DnDArgument : "axis" "gp_axislv"
-variable = gamepad_is_connected(variable) ? gamepad_axis_value(variable, gp_axislv) : 0;
-
-/// @DnDAction : YoYo Games.Gamepad.Get_Gamepad_Trigger_Value
-/// @DnDVersion : 1.1
-/// @DnDHash : 511BA83D
-/// @DnDArgument : "gp" "variable"
-variable = gamepad_is_connected(variable) ? gamepad_button_value(variable, gp_shoulderlb) : 0;
-
-/// @DnDAction : YoYo Games.Gamepad.Get_Gamepad_Device_Count
-/// @DnDVersion : 1
-/// @DnDHash : 78C08A6A
-var l78C08A6A_0 = gamepad_get_device_count();var l78C08A6A_1 = 0;for(var l78C08A6A_2 = 0; l78C08A6A_2 < l78C08A6A_0; ++l78C08A6A_2) {	if(gamepad_is_connected(l78C08A6A_2)) { ++l78C08A6A_1; }}variable = l78C08A6A_1;
-
-/// @DnDAction : YoYo Games.Gamepad.Set_Gamepad_Axis_Deadzone
-/// @DnDVersion : 1
-/// @DnDHash : 1CF5FEFC
-gamepad_set_axis_deadzone(0, 0.2);
-
-/// @DnDAction : YoYo Games.Gamepad.Set_Gamepad_Button_Threshold
-/// @DnDVersion : 1
-/// @DnDHash : 2E3F9E3D
-gamepad_set_button_threshold(0, 0.5);
-
-/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Down
-/// @DnDVersion : 1.1
-/// @DnDHash : 6605E3F7
-var l6605E3F7_0 = 0;var l6605E3F7_1 = gp_face4;if(gamepad_is_connected(l6605E3F7_0) && (gamepad_button_check(l6605E3F7_0, l6605E3F7_1) || gamepad_button_check_released(l6605E3F7_0, l6605E3F7_1))){}
-
 /// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Pressed
 /// @DnDVersion : 1.1
 /// @DnDHash : 0AA83D59
-var l0AA83D59_0 = 0;var l0AA83D59_1 = gp_face4;if(gamepad_is_connected(l0AA83D59_0) && gamepad_button_check_pressed(l0AA83D59_0, l0AA83D59_1)){}
+/// @DnDArgument : "btn" "gp_start"
+var l0AA83D59_0 = 0;var l0AA83D59_1 = gp_start;if(gamepad_is_connected(l0AA83D59_0) && gamepad_button_check_pressed(l0AA83D59_0, l0AA83D59_1)){}
 
-/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Released
+/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Pressed
 /// @DnDVersion : 1.1
-/// @DnDHash : 07554895
-var l07554895_0 = 0;var l07554895_1 = gp_face4;if(gamepad_is_connected(l07554895_0) && gamepad_button_check_released(l07554895_0, l07554895_1)){}
+/// @DnDHash : 3EA2446F
+/// @DnDArgument : "btn" "gp_padr"
+var l3EA2446F_0 = 0;var l3EA2446F_1 = gp_padr;if(gamepad_is_connected(l3EA2446F_0) && gamepad_button_check_pressed(l3EA2446F_0, l3EA2446F_1)){}
 
-/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Pressed
+/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Pressed
 /// @DnDVersion : 1.1
-/// @DnDHash : 43FC5CCC
-var l43FC5CCC_0;l43FC5CCC_0 = mouse_check_button_pressed(mb_left);if (l43FC5CCC_0){}
-
-/// @DnDAction : YoYo Games.Instances.Create_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 6BA89CAA
-instance_create_layer(0, 0, "Instances", noone);
+/// @DnDHash : 23EFC790
+/// @DnDArgument : "btn" "gp_padl"
+var l23EFC790_0 = 0;var l23EFC790_1 = gp_padl;if(gamepad_is_connected(l23EFC790_0) && gamepad_button_check_pressed(l23EFC790_0, l23EFC790_1)){}

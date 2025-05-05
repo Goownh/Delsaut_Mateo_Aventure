@@ -36,6 +36,9 @@ if(DDown) {
 var manette = gamepad_is_connected(0);
 if(manette) {
 	gamepad_set_axis_deadzone(0, 0.3);
+	start = gamepad_button_check_pressed(0,gp_start);
+	EPress = gamepad_button_check_pressed(0,gp_padr);
+	ClickDown = gamepad_button_check_pressed(0,gp_padl);
 	dirMX = gamepad_axis_value(0, gp_axislh);
 	dirMY = gamepad_axis_value(0, gp_axislv);
 }
@@ -112,4 +115,14 @@ if(EPress && O_Inventory.soin>0 && O_Vie.Hp_Joueur < 10) {
 	O_Vie.Hp_Joueur += 1;
 	Sc_InventaireSoin()
 }
-show_debug_message(room)
+
+
+if(start) {
+	if(!O_Pause.pause) {
+		O_Pause.pause = true;
+	}
+	else {
+		O_Pause.pause = false;
+	}
+	Sc_Pause(O_Pause.pause);
+}
