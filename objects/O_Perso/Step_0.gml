@@ -112,3 +112,4 @@ if(EPress && O_Inventory.soin>0 && O_Vie.Hp_Joueur < 10) {
 	O_Vie.Hp_Joueur += 1;
 	Sc_InventaireSoin()
 }
+show_debug_message(room)

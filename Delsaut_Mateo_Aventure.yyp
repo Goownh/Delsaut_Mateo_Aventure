@@ -146,12 +146,12 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Floor2","path":"rooms/Floor2/Floor2.yy",},},
     {"roomId":{"name":"Floor1","path":"rooms/Floor1/Floor1.yy",},},
     {"roomId":{"name":"Mort","path":"rooms/Mort/Mort.yy",},},
     {"roomId":{"name":"Pause","path":"rooms/Pause/Pause.yy",},},
-    {"roomId":{"name":"Floor2","path":"rooms/Floor2/Floor2.yy",},},
-    {"roomId":{"name":"Floor3","path":"rooms/Floor3/Floor3.yy",},},
     {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
+    {"roomId":{"name":"Floor3","path":"rooms/Floor3/Floor3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

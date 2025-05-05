@@ -10,7 +10,7 @@ function Sc_DrawInventaire(){
 	    _xx += 270;
 	}
 	if(O_Inventory.vases > 0){
-		draw_sprite_ext(S_Vase1, 0, _xx, _yy, 0.3, 0.3, 0, #FFFFFF, 1);
-		draw_text(_xx + 70, _yy + 70,  + string(O_Inventory.vases));
+		draw_sprite_ext(S_Vase1, 0, _xx-330, _yy-80, 0.3, 0.3, 0, #FFFFFF, 1);
+		draw_text(_xx - 200, _yy + 70,  + string(O_Inventory.vases));
 	}
 }	
