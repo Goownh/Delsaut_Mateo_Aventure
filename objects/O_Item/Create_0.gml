@@ -7,10 +7,10 @@ if(instance > 0) {
 }
 
 if(achetable) {
-	item = choose(itemHeal, itemBow, itemKey, itemSword);
+	item = choose(itemHeal, itemSword);
 }
 else {
-	item = choose(itemHeal, itemKey, itemMobLoot);
+	item = choose(itemHeal, Gold);
 }
 
 
@@ -20,18 +20,8 @@ switch(item) {
 		price = 1;
 		break;
 	
-	case itemBow:
-	    sprite_index = S_Bow;
-		price = 2;
-		break;
-	
-	case itemKey:
-	    sprite_index = S_Key;
-		price = 1;
-		break;
-	
-	case itemMobLoot:
-	    sprite_index = S_Piece;
+	case Gold:
+	    sprite_index = S_Gold;
 		break;
 	
 	case itemSword:

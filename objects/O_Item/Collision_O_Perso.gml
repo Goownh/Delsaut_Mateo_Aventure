@@ -1,7 +1,7 @@
-if(!achetable && item != itemMobLoot) {
+if(!achetable && item != Gold) {
 	Sc_Inventaire(self);
 }
-if(item == itemMobLoot) {
+if(item == Gold) {
 	score += 1;
 	instance_destroy();
 }

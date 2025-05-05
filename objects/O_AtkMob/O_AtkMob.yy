@@ -10,8 +10,8 @@
   "name":"O_AtkMob",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Mob",
+    "path":"folders/Objects/Mob.yy",
   },
   "parentObjectId":null,
   "persistent":false,

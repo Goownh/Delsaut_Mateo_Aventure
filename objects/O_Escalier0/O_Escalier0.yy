@@ -8,8 +8,8 @@
   "name":"O_Escalier0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Escalier",
+    "path":"folders/Objects/Escalier.yy",
   },
   "parentObjectId":null,
   "persistent":false,

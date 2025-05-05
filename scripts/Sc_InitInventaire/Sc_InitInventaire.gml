@@ -5,7 +5,7 @@
 
 // Item Type
 #macro itemNone 0
-#macro itemMobLoot 1
+#macro Gold 1
 #macro itemHeal 2
 #macro itemSword 3
 #macro itemBow 4

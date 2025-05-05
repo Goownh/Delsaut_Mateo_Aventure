@@ -8,8 +8,8 @@
   "name":"O_Vase2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Vase",
+    "path":"folders/Objects/Vase.yy",
   },
   "parentObjectId":null,
   "persistent":false,
