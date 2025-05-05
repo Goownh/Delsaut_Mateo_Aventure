@@ -34,5 +34,5 @@
     "path":"sprites/S_BlockButton/S_BlockButton.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -4,7 +4,7 @@ function Sc_DrawInventaire(){
 	var _yy = O_Inventory.y + view_hport[0]/2-30;
 	for (var i = 0; i < 3; i += 1) {
 	    if !(O_Inventory.itemArray[i, itemType] == itemNone) {
-	        draw_sprite_ext(O_Inventory.itemArray[i, itemSprite], 0, _xx, _yy, 0.3, 0.3, 0, #FFFFFF, 1);
+	        draw_sprite_ext(O_Inventory.itemArray[i, itemSprite], 0, _xx-1000, _yy, 0.3, 0.3, 0, #FFFFFF, 1);
 	        draw_text(_xx + 70, _yy + 70,  + string(O_Inventory.itemArray[i, itemAmount]));
 	    }
 	    _xx += 270;
